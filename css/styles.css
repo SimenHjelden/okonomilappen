@@ -1,25 +1,48 @@
 ﻿body {
-    margin:0;
+    margin: 0;
 }
 
+/* OKONOMILAPPEN : section */
+#okonomilappen {
 
+}
+
+/* MENUWRAP : section */
+#menuWrap {
+
+}
+#menuWrap #slideMenu {
+
+}
+#slideMenu ul {
+
+}
+#slideMenu ul li {
+
+}
+#slideMenu ul li a {
+
+}
+
+/* MAINCONTENT : section */
+
+/* MAIN HEADER : header */
 #mainHeader {
-    height:250px;
-	background-color:rgb(44, 62, 80);
+    height: 250px;
+	background-color: rgb(44, 62, 80);
 }
-
 #mainHeader h1 {
-    font-family:'Century Gothic';
-    font-size:5em;
-    color:#FFF;
-    text-align:center;
-    padding:75px 0px 0px 0px;
-    margin:0px;
+    font-family: 'Century Gothic';
+    font-size: 5em;
+    color: #FFF;
+    text-align: center;
+    padding: 75px 0px 0px 0px;
+    margin: 0px;
 }
 
-
+/* MAIN FOOTER : footer */
 #mainFooter {
-    height:100px;
-    position:absolute;
-    bottom:0px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
 }
