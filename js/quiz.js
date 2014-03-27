@@ -18,7 +18,6 @@ function setObjects() {
 	okonomilappenJSON = "../js/okonomilappen.json";
 	score = 0;
 }
-
 function setEventHandlers() {
 
 }
@@ -29,6 +28,7 @@ function answer(id) {
 	} else {
 		$( "#alt" + id ).css( "background-color", "rgb(192, 57, 43)" );
 	}
+	$("#alternatives li").attr("onclick","");
 	if(currentQuestion != quizLength - 1) {
 		nextQuestion();
 	} else {
@@ -38,8 +38,24 @@ function answer(id) {
 }
 
 function endOfQuiz() {
-	questionDiv.html("<h2>Gratulerer du fikk " + score + "poeng</h2><p>Du mangler " + quizLength * 100 + "poeng for full pott, prøv igjen!</p>");
+	questionDiv.html(getResultText());
 	alternativeUl.html("");
+}
+function getResultText() {
+	var output = "<h2>Gratulerer du fikk " + score + " poeng</h2><p>";
+	if( getMaxScore() > score ) { output += "Du mangler " + ( getMaxScore() - score ) 
+		+ " poeng for full pott, <span style='cursor: pointer;' onclick='resetQuiz();'><b>prøv igjen!</b></span>" }
+		else { output += "Det er full pott!" }
+	output += "</p>";
+	return output;
+}
+function resetQuiz() {
+	score = 0;
+	currentQuestion = 0;
+	getQuestion();
+}
+function getMaxScore() {
+	return quizLength * 100;
 }
 
 function nextQuestion() {
@@ -59,7 +75,7 @@ function getQuestion(){
 			//get current question number
 			if( i === currentQuestion ) {
 				//set current question id and text to questionText-div
-				questionDiv.html("<p>Spørsmål " + i + "</p><h2>" + item.text + "</h2>");
+				questionDiv.html("<p>Spørsmål " + (i + 1) + "</p><h2>" + item.text + "</h2>");
 
 				$.each( item.alt, function( a, alt){
 					alternativeUl.append("<li id='alt" + a + "' onclick='answer(" + a + ");'>" + alt.text + "</li>");
