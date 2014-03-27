@@ -121,7 +121,32 @@
 
 #welcomeMessage a:hover {
 		background-color:rgb(231, 76, 60);
-		}	 		
+}
+
+#quiz{
+	width:850px;
+	height:400px;
+	background-color:#bdc3c7;
+	box-shadow:2px 2px 2px #000;
+	margin: 30px auto;
+}
+
+#quiz #question{
+	font-family:sans-serif;
+	font-size:1.4em;
+	color:#000;
+	text-align:center;
+	padding:10px;
+}
+
+#quiz #alternatives li{
+	width:120px;
+	height:auto;
+	display:inline-block;
+	margin:10px auto;
+	background-color:#2980b9;
+	padding:10px;
+}	 		
 
 /* MAIN HEADER : header */
 #mainHeader {
