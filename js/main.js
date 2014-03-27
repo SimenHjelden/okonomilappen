@@ -35,7 +35,12 @@ function setHeight() {
 }
 
 function setWidth() {
-	mainContent.width( window.innerWidth - 200 );
+	if(menuFlag) {
+		mainContent.width( window.innerWidth - 200 );
+	} else {
+		mainContent.width( window.innerWidth );
+	}
+	
 }
 
 function settEventHandlere() {
@@ -54,6 +59,5 @@ function toggleMenu() {
 		menuWrap.css( "left", "0px" );
 		mainContent.css( "left", "200px" );
 	}
-	setHeight();
 	setWidth();
 }
