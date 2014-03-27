@@ -2,18 +2,18 @@
 {
 	"question": [
 		{
-			"text": "Hva står NITH for?",
+			"text": "Spareavtale er en smart måte å spare på. Hva innebærer dette?",
 			"alt": [
 				{
-					"text": "Norges Informasjonsteknologiske høyskole",
-					"value": true
-				},
-				{
-					"text": "Norges Internasjonale høyskole",
+					"text": "Jeg setter inn et stort beløp i banken, og lar det stå urørt frem til en bestemt dato",
 					"value": false
 				},
 				{
-					"text": "Norges Internasjonale høyskole",
+					"text": "Jeg avtaler at banken overfører et fast, månedlig beløp fra bruks- til sparekontoen",
+					"value": true
+				},
+				{
+					"text": "Jeg avtaler med banken at sparepengene kun kan brukes på et bestemt formål",
 					"value": false
 				}
 			]
@@ -31,22 +31,6 @@
 				{
 					"text": "Bankinnskuddet mitt vokser automatisk i takt med prisstigningen",
 					"value": false
-				}
-			]
-		},{
-			"text": "Hva er mitt navn?",
-			"alt": [
-				{
-					"text": "Tore",
-					"value": false
-				},
-				{
-					"text": "Truls",
-					"value": false
-				},
-				{
-					"text": "Magnus",
-					"value": true
 				}
 			]
 		}
