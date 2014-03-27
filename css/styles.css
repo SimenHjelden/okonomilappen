@@ -139,6 +139,7 @@
 #quiz #alternatives{
 	margin:auto;
 	display:block;
+	list-style:none;
 	}
 
 
@@ -154,7 +155,11 @@
 	font-size:0.7em;
 	color:#FFF;
 	text-align:center;
-}	 		
+}	
+
+#quiz #alternatives li:hover{
+	background-color:#2980b9;
+	}		
 
 /* MAIN HEADER : header */
 #mainHeader {
@@ -163,7 +168,7 @@
 }
 #mainHeader h1 {
     font-family: sans-serif;
-    font-size: 3em;
+    font-size: 3em;#2980b9
     color: #FFF;
     text-align: center;
     padding: 40px 0px 0px 0px;
