@@ -9,8 +9,9 @@
 
 /* MENUWRAP : section */
 #menuWrap {
+	width:200px;
 	background-color:rgb(22, 160, 133);
-	dusplay:inline;
+	display:inline-block;
 }
 #menuWrap #slideMenu {
 }
@@ -27,7 +28,7 @@
 
 /* MAINCONTENT : section */
 #mainContent{
-	display:inline;
+	display:inline-block;
 	}
 
 /* MAIN HEADER : header */
