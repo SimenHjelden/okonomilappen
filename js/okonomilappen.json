@@ -1,0 +1,54 @@
+
+{
+	"question": [
+		{
+			"text": "Hva står NITH for?",
+			"alternativ": [
+				{
+					"text": "Norges Informasjonsteknologiske høyskole",
+					"value": true
+				},
+				{
+					"text": "Norges Internasjonale høyskole",
+					"value": false
+				},
+				{
+					"text": "Norges Internasjonale høyskole",
+					"value": false
+				}
+			]
+		},{
+			"text": "På hvilken måte innvirker <span title='inflasjonen'>prisstigningen</span> i samfunnet på din sparing?*",
+			"alternativ": [
+				{
+					"text": "Ingenting, fordi bankinnskudd er 100 prosent trygge",
+					"value": false
+				},
+				{
+					"text": "Prisstigningen medfører at det jeg sparer i dag blir mindre verdt i fremtiden",
+					"value": true
+				},
+				{
+					"text": "Bankinnskuddet mitt vokser automatisk i takt med prisstigningen",
+					"value": false
+				}
+			]
+		},{
+			"text": "Hva er mitt navn?",
+			"alternativ": [
+				{
+					"text": "Tore",
+					"value": false
+				},
+				{
+					"text": "Truls",
+					"value": false
+				},
+				{
+					"text": "Magnus",
+					"value": true
+				}
+			]
+		}
+	]
+}
