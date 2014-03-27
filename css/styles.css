@@ -70,6 +70,13 @@
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
+
+#mianContent #mainHeader{}
+
+#mainHeader h1{
+	color:#fff;
+}
+
 #mainContent #menuBtn {
     position: fixed;
     cursor: pointer;
@@ -145,8 +152,11 @@
 
 
 #quiz #alternatives li{
-	display:inline;
-	margin:20px;
+	width:150px;
+	height:40px;
+	display:block;
+	float:left;
+	margin:20px auto;
 	background-color:#34495e;
 	text-align:center;
 	padding:25px 10px 25px 10px;
