@@ -34,7 +34,7 @@
 
 #slideMenu ul li a {
 	position:absolute;
-	width:100%;
+	width:200px;
 	height:75%;
 	font-family: sans-serif;
 	color:rgb(255, 255, 255);
@@ -187,4 +187,8 @@
 	#menuWrap{
 		width:300px;
 		}
+		
+		#slideMenu ul li a {
+			width:300px;
+			}
 }
