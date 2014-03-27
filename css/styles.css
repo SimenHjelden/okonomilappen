@@ -1,13 +1,11 @@
 ﻿body {
     margin:0;
-	
 }
 
 
 #mainHeader {
     height:250px;
 	background-color:rgb(44, 62, 80);
-
 }
 
 #mainHeader h1 {
