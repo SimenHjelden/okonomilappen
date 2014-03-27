@@ -3,7 +3,7 @@
 	"question": [
 		{
 			"text": "Hva står NITH for?",
-			"alternativ": [
+			"alt": [
 				{
 					"text": "Norges Informasjonsteknologiske høyskole",
 					"value": true
@@ -19,7 +19,7 @@
 			]
 		},{
 			"text": "På hvilken måte innvirker <span title='inflasjonen'>prisstigningen</span> i samfunnet på din sparing?*",
-			"alternativ": [
+			"alt": [
 				{
 					"text": "Ingenting, fordi bankinnskudd er 100 prosent trygge",
 					"value": false
@@ -35,7 +35,7 @@
 			]
 		},{
 			"text": "Hva er mitt navn?",
-			"alternativ": [
+			"alt": [
 				{
 					"text": "Tore",
 					"value": false

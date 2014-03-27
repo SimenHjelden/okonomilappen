@@ -3,7 +3,6 @@
 })();
 
 var menuWrap, mainContent, menuFlag, menuBtn;
-var currentQuestion, question, alternatives;
 
 function init() {
 	setObjects();
@@ -26,9 +25,6 @@ function setObjects() {
 	menuFlag = false;
 	menuBtn = $( "#menuBtn" );
 	Search = $( "#search" );
-	currentQuestion = 0;
-	question = $("#question");
-	alternatives = $("alternatives");
 }
 
 function setEventHandlers() {
