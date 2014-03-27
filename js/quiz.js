@@ -38,7 +38,7 @@ function answer(id) {
 }
 
 function endOfQuiz() {
-	questionDiv.html("<p>Gratulerer du fikk " + score + "poeng</p>");
+	questionDiv.html("<h2>Gratulerer du fikk " + score + "poeng</h2><p>Du mangler " + quizLength * 100 + "poeng for full pott, prøv igjen!</p>");
 	alternativeUl.html("");
 }
 
