@@ -3,6 +3,7 @@
 })();
 
 var menuWrap, mainContent, menuFlag, menuBtn;
+var currentQuestion, question, alternatives;
 
 function init() {
 	setObjects();
@@ -22,9 +23,12 @@ $( window ).resize(function() {
 function setObjects() {
 	menuWrap = $( "#menuWrap" );
 	mainContent = $( "#mainContent" );
-	menuFlag = true;
+	menuFlag = false;
 	menuBtn = $( "#menuBtn" );
-	seach = $( "#search" );
+	Search = $( "#search" );
+	currentQuestion = 0;
+	question = $("#question");
+	alternatives = $("alternatives");
 }
 
 function setEventHandlers() {
@@ -32,6 +36,7 @@ function setEventHandlers() {
 		toggleMenu();
 	});
 }
+	
 
 function setHeight() {
 	menuWrap.height( window.innerHeight );
@@ -66,3 +71,4 @@ function toggleMenu() {
 	}
 	setWidth();
 }
+

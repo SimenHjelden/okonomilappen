@@ -79,24 +79,63 @@
 	font-size:1.2em;
 	margin:5px;
 	width:100px;
-	background-color:rgb(211, 84, 0);
+	background-color:rgb(192, 57, 43);
 	padding:3px;
+	z-index:1;
+}
+	
+#mainContent #welcomeMessage{
+	position:absolute;
+	top:40%;
+	left:30%;
+	width:850px;
+	min-height:250px;
+	height:auto;
+	margin:auto;
+	margin-top:10px;
+	border:1px solid #000;
 	}
 	
+#welcomeMessage p {
+	font-family:Verdana, Geneva, sans-serif;
+	color:#000;
+	margin:auto;
+	text-align:center;
+	padding:8% 10px 0px 10px;
+	}
+#welcomeMessage a {
+	width:250px;
+	height:40px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:1.3em;
+	background-color:rgb(192, 57, 43);
+	color:rgb(255, 255, 255);
+	font-weight:bold;
+	text-decoration:none;
+	margin:15px;
+	text-align:center;
+	display:block;
+	padding:15px 5px 0px 5px ;
+	margin:20px auto;
+}
 
+#welcomeMessage a:hover {
+		background-color:rgb(231, 76, 60);
+		}	 		
 
 /* MAIN HEADER : header */
 #mainHeader {
-    height: 250px;
+    height: 150px;
 	background-color: rgb(44, 62, 80);
 }
 #mainHeader h1 {
     font-family: sans-serif;
-    font-size: 5em;
+    font-size: 3em;
     color: #FFF;
     text-align: center;
-    padding: 75px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
     margin: 0px;
+	opacity:0.7;
 }
 
 /* MAIN FOOTER : footer */
