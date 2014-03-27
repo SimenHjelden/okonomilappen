@@ -4,16 +4,10 @@
 
 var menuWrap, mainContent, menuFlag, menuBtn;
 
-function setObjects() {
-	menuWrap = $( "#menuWrap" );
-	mainContent = $( "#mainContent" );
-	menuFlag = true;
-	menuBtn = $( "#menuBtn" );
-}
-
 function init() {
 	setObjects();
-	settEventHandlere();
+	setEventHandlers();
+
 	setHeight();
 	setWidth();
 	setPosition();
@@ -22,11 +16,21 @@ function init() {
 $( window ).resize(function() {
 	setHeight();
 	setWidth();
+	setPosition();
 });
 
-function setPosition() {
-	menuWrap.css( "left", "0px" );
-	mainContent.css( "left", menuWrap.width() );
+function setObjects() {
+	menuWrap = $( "#menuWrap" );
+	mainContent = $( "#mainContent" );
+	menuFlag = true;
+	menuBtn = $( "#menuBtn" );
+	seach = $( "#search" );
+}
+
+function setEventHandlers() {
+	menuBtn.click(function(){
+		toggleMenu();
+	});
 }
 
 function setHeight() {
@@ -35,29 +39,30 @@ function setHeight() {
 }
 
 function setWidth() {
-	if(menuFlag) {
+	if( menuFlag ) {
 		mainContent.width( window.innerWidth - menuWrap.width() );
 	} else {
 		mainContent.width( window.innerWidth );
 	}
-	
 }
 
-function settEventHandlere() {
-	menuBtn.click(function(){
-		toggleMenu();
-	});
+function setPosition() {
+	if( menuFlag ) {
+		menuWrap.css( "left", "0px" );
+		mainContent.css( "left", menuWrap.width() + "px" );
+	} else {
+		menuWrap.css( "left", "-" + menuWrap.width() + "px" );
+		mainContent.css( "left", "0px" );
+	}
 }
 
 function toggleMenu() {
-	if(menuFlag) {
+	if( menuFlag ) {
 		menuFlag = false;
-		menuWrap.css( "left", "-" + menuWrap.width() + "px" );
-		mainContent.css( "left", "0px", "width" );
+		setPosition();
 	} else {
 		menuFlag = true;
-		menuWrap.css( "left", "0px" );
-		mainContent.css( "left", menuWrap.width() + "px" );
+		setPosition();
 	}
 	setWidth();
 }
