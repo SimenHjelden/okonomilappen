@@ -185,12 +185,30 @@
     bottom: 0px;
 }
 
-@media screen and (min-width:1280px){
-	#menuWrap{
-		width:300px;
-	}
-		
-	#slideMenu ul li a {
-		width:280px;
-	}
+@media handheld, screen and (max-width:500px){}
+
+@media screen and (min:width:500px) and (max-width:1024px){
+#menuWrap{
+	width:200px;
+}
+
+#menuWrap ul li a{
+	width:180px;
+}
+
+#mainContent #quiz{
+	width:30%;
+
+}
+
+
+@media screen and (min:width:1024px){
+
+#menuWrap{
+	width:300px;
+}
+
+#menuWrap ul li a{
+	width:280px;
+}	
 }
