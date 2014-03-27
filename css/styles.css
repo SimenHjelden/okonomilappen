@@ -187,7 +187,7 @@
 
 @media handheld, screen and (max-width:500px){}
 
-@media screen and (min:width:500px) and (max-width:1024px){
+@media screen and (min-width:500px) and (max-width:1024px){
 #menuWrap{
 	width:200px;
 }
@@ -196,9 +196,36 @@
 	width:180px;
 }
 
-#mainContent #quiz{
-	width:30%;
+#quiz{
+	width:480px;
 
+}
+
+#quiz #question{
+	font-size:1em;
+	color:#000;
+	text-align:center;
+	margin:0px 0px 40px 0px
+}
+
+#quiz #alternatives{
+	margin:auto;
+	display:block;
+	list-style:none;
+	}
+
+
+#quiz #alternatives li{
+    width: 160px;
+    height: 60px;
+    margin: 10px;
+    padding: 20px;
+	display:block;
+	background-color:#34495e;
+	font-size:0.7em;
+	color:#FFF;
+	text-align:center;
+}	
 }
 
 
