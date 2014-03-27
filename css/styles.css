@@ -9,9 +9,10 @@
 
 /* MENUWRAP : section */
 #menuWrap {
-	width:200px;
+	position:absolute;
+	left:0;
 	background-color:rgb(22, 160, 133);
-	display:inline-block;
+	width:200px;
 }
 #menuWrap #slideMenu {
 }
@@ -19,7 +20,6 @@
 	lsit-style:none;
 }
 #slideMenu ul li {
-	
 
 }
 #slideMenu ul li a {
@@ -28,7 +28,7 @@
 
 /* MAINCONTENT : section */
 #mainContent{
-	display:inline-block;
+	position:absolute;
 	}
 
 /* MAIN HEADER : header */
