@@ -144,13 +144,13 @@
 
 
 #quiz #alternatives li{
-	display:inline-block;
+	display:inline;
 	width:180px;
 	height:60px;
 	margin:20px;
 	background-color:#34495e;
 	text-align:center;
-	padding:25px 10px 0px 10px;
+	padding:25px 10px 25px 10px;
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:0.7em;
 	color:#FFF;
@@ -159,6 +159,7 @@
 
 #quiz #alternatives li:hover{
 	background-color:#2980b9;
+	cursor:pointer;
 	}		
 
 /* MAIN HEADER : header */
