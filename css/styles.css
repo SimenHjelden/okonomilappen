@@ -10,13 +10,14 @@
 /* MENUWRAP : section */
 #menuWrap {
 	position:absolute;
-	background-color:rgb(22, 160, 133);
+	background-color:rgb(52, 73, 94);
 	width:200px;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
+	border: 1px solid rgb(0,0,0,);
 }
 #menuWrap #slideMenu {
 }
@@ -43,7 +44,16 @@
     position: fixed;
     cursor: pointer;
     color: #fff;
-}
+	text-align:center;
+	font-family:"Century Gothic";
+	font-size:1.2em;
+	margin:5px;
+	width:100px;
+	background-color:rgb(211, 84, 0);
+	padding:3px;
+	}
+	
+
 
 /* MAIN HEADER : header */
 #mainHeader {
@@ -64,4 +74,10 @@
     height: 100px;
     position: absolute;
     bottom: 0px;
+}
+
+@media screen and (min-width:1280px){
+	#menuWrap{
+		width:300px;
+		}
 }

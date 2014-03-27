@@ -26,7 +26,7 @@ $( window ).resize(function() {
 
 function setPosition() {
 	menuWrap.css( "left", "0px" );
-	mainContent.css( "left", "200px" );
+	mainContent.css( "left", menuWrap.width() );
 }
 
 function setHeight() {
@@ -36,7 +36,7 @@ function setHeight() {
 
 function setWidth() {
 	if(menuFlag) {
-		mainContent.width( window.innerWidth - $( "#menuWrap" ).width() );
+		mainContent.width( window.innerWidth - menuWrap.width() );
 	} else {
 		mainContent.width( window.innerWidth );
 	}
@@ -52,12 +52,12 @@ function settEventHandlere() {
 function toggleMenu() {
 	if(menuFlag) {
 		menuFlag = false;
-		menuWrap.css( "left", "-" + $( "#menuWrap" ).width() + "px" );
+		menuWrap.css( "left", "-" + menuWrap.width() + "px" );
 		mainContent.css( "left", "0px", "width" );
 	} else {
 		menuFlag = true;
 		menuWrap.css( "left", "0px" );
-		mainContent.css( "left", $( "#menuWrap" ).width() + "px" );
+		mainContent.css( "left", menuWrap.width() + "px" );
 	}
 	setWidth();
 }
