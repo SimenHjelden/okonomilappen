@@ -33,6 +33,38 @@
 					"value": false
 				}
 			]
+		},{
+			"text": "Spareavtale er en smart måte å spare på. Hva innebærer dette?",
+			"alt": [
+				{
+					"text": "Jeg setter inn et stort beløp i banken, og lar det stå urørt frem til en bestemt dato",
+					"value": false
+				},
+				{
+					"text": "Jeg avtaler at banken overfører et fast, månedlig beløp fra bruks- til sparekontoen",
+					"value": true
+				},
+				{
+					"text": "Jeg avtaler med banken at sparepengene kun kan brukes på et bestemt formål",
+					"value": false
+				}
+			]
+		},{
+			"text": "På hvilken måte innvirker <span title='inflasjonen'>prisstigningen</span> i samfunnet på din sparing?*",
+			"alt": [
+				{
+					"text": "Ingenting, fordi bankinnskudd er 100 prosent trygge",
+					"value": false
+				},
+				{
+					"text": "Prisstigningen medfører at det jeg sparer i dag blir mindre verdt i fremtiden",
+					"value": true
+				},
+				{
+					"text": "Bankinnskuddet mitt vokser automatisk i takt med prisstigningen",
+					"value": false
+				}
+			]
 		}
 	]
 }
